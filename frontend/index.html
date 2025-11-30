@@ -1,0 +1,34 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cliq Timesaver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Cliq Timesaver</h1>
+
+    <section class="card">
+      <h2>Process text</h2>
+      <textarea id="textInput" placeholder="Paste meeting notes or transcript..." rows="8"></textarea>
+      <button id="processTextBtn">Process text</button>
+    </section>
+
+    <section class="card">
+      <h2>Process audio</h2>
+      <input type="file" id="audioFile" accept="audio/*,.txt" />
+      <button id="processAudioBtn">Transcribe and process</button>
+      <p class="hint">Demo STT is stubbed. Upload a .txt to simulate transcript, or integrate a real STT.</p>
+    </section>
+
+    <section class="card">
+      <h2>Results</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
