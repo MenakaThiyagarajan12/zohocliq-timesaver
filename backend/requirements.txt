@@ -1,5 +1,5 @@
 Flask==2.3.3
-Flask-Cors==3.0.11
+Flask-Cors==3.1.1
 uvicorn==0.23.2
 pydantic==1.10.12
 requests==2.31.0
