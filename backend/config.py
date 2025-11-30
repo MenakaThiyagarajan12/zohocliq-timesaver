@@ -3,8 +3,8 @@ import os
 
 class Config:
     HOST = os.getenv("HOST", "0.0.0.0")
-    PORT = int(os.getenv("PORT", "5000"))
-    DEBUG = os.getenv("DEBUG", "true").lower() == "true"
+    PORT = int(os.getenv("PORT", 10000))
+    DEBUG = os.getenv("DEBUG", "false").lower() == "true"
     UPLOAD_DIR = os.getenv("UPLOAD_DIR", os.path.join(os.getcwd(), "uploads"))
 
     @staticmethod
@@ -13,3 +13,4 @@ class Config:
             os.makedirs(Config.UPLOAD_DIR, exist_ok=True)
 
 Config.ensure_dirs()
+
